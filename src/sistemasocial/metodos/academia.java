@@ -13,37 +13,40 @@ public class academia {
         int opcaoacademia;
 
         //menu de equipamentos
+
         System.out.println("Bem vindo a Youth Academy: ");
 
         do {
+            System.out.println("---------------------------------");
             System.out.println("Qual equipamento deseja usar?");
             System.out.println("1 - Esteira");
             System.out.println("2 - Halteres");
             System.out.println("3 - Supino");
             System.out.println("4 - Pular Corda");
             System.out.println("5 - Sair da academia");
-
             System.out.printf("Exercício escolhido:");
             opcaoacademia = ler.nextInt();
+            System.out.println("---------------------------------");
 
             //esteira
             switch (opcaoacademia) {
                 case 1:
+                    System.out.println("---------------------------------");
                     System.out.println("Ligando Esteira....");
                     System.out.println("");
                     System.out.println("Correndo desenfreadamente....");
-                    System.out.println("");
                     System.out.println("Desligando Esteira....");
 
                     pesoPerdido = (float) (Math.random() * (3.5f - 1.0f) + 1.0f);
                     System.out.println("Parábens, você perdeu " + String.format("%.2f", (float) pesoPerdido) + " kg.");
                     peso = peso - pesoPerdido;
                     System.out.println("Peso atual : " + String.format("%.2f", peso));
-                    System.out.println("");
+                    System.out.println("---------------------------------");
                     break;
 
                 //halteres
                 case 2:
+                    System.out.println("---------------------------------");
                     System.out.println("Pegando Halteres....");
                     System.out.println("");
                     System.out.println("Puxando peso....");
@@ -54,11 +57,12 @@ public class academia {
                     System.out.println("Parábens, você ganhou " + String.format("%.2f", (float) pesoGanho) + " kg.");
                     peso = peso + pesoGanho;
                     System.out.println("Peso atual : " + String.format("%.2f", peso));
-                    System.out.println("");
+                    System.out.println("---------------------------------");
                     break;
 
                 //supino
                 case 3:
+                    System.out.println("---------------------------------");
                     System.out.println("Preparando a barra....");
                     System.out.println("");
                     System.out.println("Levantando peso....");
@@ -69,11 +73,12 @@ public class academia {
                     System.out.println("Parábens, você ganhou " + String.format("%.2f", (float) pesoGanho) + " kg.");
                     peso = peso + pesoGanho;
                     System.out.println("Peso atual : " + String.format("%.2f", peso));
-                    System.out.println("");
+                    System.out.println("---------------------------------");
                     break;
 
                 //pular corda
                 case 4:
+                    System.out.println("---------------------------------");
                     System.out.println("Desembolando Corda");
                     System.out.println("");
                     System.out.println("Pulando corda");
@@ -84,11 +89,12 @@ public class academia {
                     System.out.println("Parábens, você perdeu " + String.format("%.2f", (float) pesoPerdido) + " kg.");
                     peso = peso - pesoPerdido;
                     System.out.println("Peso atual : " + String.format("%.2f", peso));
-                    System.out.println("");
+                    System.out.println("---------------------------------");
                     break;
 
                 //sair academia
                 case 5:
+                    System.out.println("---------------------------------");
                     System.out.println("Saindo da academia");
                     System.out.println("");
                     break;
@@ -105,7 +111,7 @@ public class academia {
             } else if (peso <= 70) {
                 System.out.println("Você está ficando magrelo");
             }
-            System.out.println("");
+            System.out.println("---------------------------------");
 
         } while (opcaoacademia != 5);
         return peso;

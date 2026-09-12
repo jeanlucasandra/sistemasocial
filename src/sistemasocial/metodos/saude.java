@@ -12,10 +12,12 @@ public class saude {
         int saudeGanha = 0;
 
 
+        System.out.println("---------------------------------");
         System.out.println("Bem vindo a seção de alimentos: ");
 
         do {
             //menu de alimentos
+            System.out.println("---------------------------------");
             System.out.println("");
             System.out.println("Que alimento deseja consumir hoje?");
             System.out.println("1 - Frango Frito com Coca Cola");
@@ -26,10 +28,12 @@ public class saude {
 
             System.out.print("Alimento escolhido: ");
             opcaoalimento = ler.nextInt();
+            System.out.println("---------------------------------");
 
             //frango frito com coca cola
             switch (opcaoalimento) {
                 case 1:
+                    System.out.println("---------------------------------");
                     System.out.println("Comendo Frango Frito com Coca Cola....");
 
                     saudePerdida = (int) (Math.random() * (3 - 1) + 1);
@@ -37,10 +41,11 @@ public class saude {
 
                     saude = saude - saudePerdida;
                     System.out.println("Saúde atual : " + saude + "/100");
-                    System.out.println("");
+                    System.out.println("---------------------------------");
                     break;
                 //omelete proteica com vegetais
                 case 2:
+                    System.out.println("---------------------------------");
                     System.out.println("Comendo Omelete Proteica com Vegetais....");
 
                     saudeGanha = (int) (Math.random() * (5 - 1) + 1);
@@ -48,10 +53,11 @@ public class saude {
 
                     saude = Math.min(saude + saudeGanha, 100);
                     System.out.println("Saúde atual : " + saude + "/100");
-                    System.out.println("");
+                    System.out.println("---------------------------------");
                     break;
                     //banana com aveia
                 case 3:
+                    System.out.println("---------------------------------");
                     System.out.println("Comendo Banana com Aveia....");
 
                     saudeGanha = (int) (Math.random() * (5 - 1) + 1);
@@ -59,10 +65,11 @@ public class saude {
 
                     saude = Math.min(saude + saudeGanha, 100);
                     System.out.println("Saúde atual : " + saude + "/100");
-                    System.out.println("");
+                    System.out.println("---------------------------------");
                     break;
                     //doritos com guacamole
                 case 4:
+                    System.out.println("---------------------------------");
                     System.out.println("Comendo Doritos com Guacamole....");
 
                     saudePerdida = (int) (Math.random() * (3 - 1) + 1);
@@ -70,10 +77,11 @@ public class saude {
 
                     saude = saude - saudePerdida;
                     System.out.println("Saúde atual : " + saude + "/100");
-                    System.out.println("");
+                    System.out.println("---------------------------------");
                     break;
                     //sair do programa
                 case 5:
+                    System.out.println("---------------------------------");
                     System.out.println("Saindo da cozinha....");
                     break;
 
@@ -87,6 +95,7 @@ public class saude {
                 System.out.println("Saúde abaixo do esperado!");
             } else if (saude == 100) {
                 System.out.println("Saúde cheia!");
+                System.out.println("---------------------------------");
             }
         } while (opcaoalimento != 5);
         return saude;

@@ -34,18 +34,16 @@ public class main {
 
         //menu completo do sistema
         do {
-            System.out.println("");
+            System.out.println("---------------------------------");
             System.out.println("Bem vindo ao sistema NetSys, " + nome);
             System.out.println("O que deseja usar/fazer?");
             System.out.println("1 - Academia");
             System.out.println("2 - Comida");
             System.out.println("3 - Verificar lista do Usuário");
             System.out.println("4 - Encerrar sistema");
-
-
             System.out.printf("Opção escolhida: ");
             opcao = ler.nextInt();
-            System.out.println("");
+            System.out.println("---------------------------------");
 
             //academia menu
             if (opcao == 1) {
@@ -61,14 +59,17 @@ public class main {
 
             //menu de cadastro usuario
             if (opcao == 3) {
+                System.out.println("---------------------------------");
                 System.out.println("Abrindo lista do usuário....");
                 System.out.println("Nome: " + nome);
                 System.out.println("Idade: " + idade);
                 System.out.println("Altura: " + altura);
                 System.out.println("Peso: " + String.format("%.2f", peso) + " Kg");
                 System.out.println("Saúde: " + saude + "/100");
+                System.out.println("---------------------------------");
 
                 if (opcao == 4) {
+                    System.out.println("---------------------------------");
                     System.out.println("Encerrando sistema");
                 }
 

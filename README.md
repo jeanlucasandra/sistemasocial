@@ -13,3 +13,20 @@ randomizado. NÃO HÁ PADRÃO DE VALORES.
 
 Opcão de encerrar programa inclusa.
 
+Instruções de Inicialização (Diretamente pela IDE)
+*Lembre-se de ter o JDK (Java Development Kit) instalado na sua máquina.
+
+1-Baixe os arquivos em formato ZIP ou clone o repositório.
+2-Abra a pasta do projeto em sua IDE.
+3-Localize a classe principal em 'src/sistemasocial/main.java'.
+4-Execute o metodo 'main' diretamente pela interface da IDE.
+
+(Diretamente pelo CMD)
+1-Abra o terminal na pasta raiz do projeto ('src').
+2-Compile os arquivos executando:
+
+   javac sistemasocial/main.java sistemasocial/metodos/academia.java sistemasocial/metodos/saude.java
+
+3-Execute o programa com o comando:
+
+java sistemasocial.main
