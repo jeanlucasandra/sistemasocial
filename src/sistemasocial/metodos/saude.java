@@ -1,4 +1,4 @@
-package praticarjava.metodos;
+package sistemasocial.metodos;
 
 import java.util.Scanner;
 
@@ -15,7 +15,7 @@ public class saude {
         System.out.println("Bem vindo a seção de alimentos: ");
 
         do {
-
+            //menu de alimentos
             System.out.println("");
             System.out.println("Que alimento deseja consumir hoje?");
             System.out.println("1 - Frango Frito com Coca Cola");
@@ -27,7 +27,7 @@ public class saude {
             System.out.print("Alimento escolhido: ");
             opcaoalimento = ler.nextInt();
 
-
+            //frango frito com coca cola
             switch (opcaoalimento) {
                 case 1:
                     System.out.println("Comendo Frango Frito com Coca Cola....");
@@ -39,7 +39,7 @@ public class saude {
                     System.out.println("Saúde atual : " + saude + "/100");
                     System.out.println("");
                     break;
-
+                //omelete proteica com vegetais
                 case 2:
                     System.out.println("Comendo Omelete Proteica com Vegetais....");
 
@@ -50,7 +50,7 @@ public class saude {
                     System.out.println("Saúde atual : " + saude + "/100");
                     System.out.println("");
                     break;
-
+                    //banana com aveia
                 case 3:
                     System.out.println("Comendo Banana com Aveia....");
 
@@ -61,7 +61,7 @@ public class saude {
                     System.out.println("Saúde atual : " + saude + "/100");
                     System.out.println("");
                     break;
-
+                    //doritos com guacamole
                 case 4:
                     System.out.println("Comendo Doritos com Guacamole....");
 
@@ -72,7 +72,7 @@ public class saude {
                     System.out.println("Saúde atual : " + saude + "/100");
                     System.out.println("");
                     break;
-
+                    //sair do programa
                 case 5:
                     System.out.println("Saindo da cozinha....");
                     break;
@@ -82,6 +82,7 @@ public class saude {
                     break;
 
             }
+            //aviso nivel de saude
             if (saude <= 60) {
                 System.out.println("Saúde abaixo do esperado!");
             } else if (saude == 100) {

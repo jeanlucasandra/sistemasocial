@@ -1,4 +1,4 @@
-package praticarjava.metodos;
+package sistemasocial.metodos;
 
 import java.util.Scanner;
 

@@ -1,13 +1,13 @@
-package praticarjava;
+package sistemasocial;
 
-import praticarjava.metodos.academia;
+import sistemasocial.metodos.academia;
 
-import praticarjava.metodos.saude;
+import sistemasocial.metodos.saude;
 
 
 import java.util.Scanner;
 
-public class PraticarJava {
+public class main {
     public static void main(String[] args) {
 
         //variaveis main
@@ -59,6 +59,7 @@ public class PraticarJava {
                 saude = MinhaSaude.nivelSaude(saude);
             }
 
+            //menu de cadastro usuario
             if (opcao == 3) {
                 System.out.println("Abrindo lista do usuário....");
                 System.out.println("Nome: " + nome);
